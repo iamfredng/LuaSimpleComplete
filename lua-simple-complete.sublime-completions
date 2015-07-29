@@ -1,0 +1,589 @@
+{
+    "scope": "source.lua",
+    "completions": [
+        {
+            "trigger": "repeat\trepeat -lua",
+            "contents": "repeat\n$1\nuntil\n$0"
+        },
+        {
+            "trigger": "if\tif -lua",
+            "contents": "if $1 then\n\t$2\nend\n$0"
+        },
+        {
+            "trigger": "ife\tif else -lua",
+            "contents": "if $1 then\n\t$2\nelse\n\t$3\nend\n$0"
+        },
+        {
+            "trigger": "mod\tcreate mod -lua",
+            "contents": "${1:modname} = {}\n\n$0\n\nreturn ${1:modname}\n"
+        },
+        {
+            "trigger": "debug.debug\tdebug.debug() -lua",
+            "contents": "debug.debug()$0"
+        },
+        {
+            "trigger": "debug.gethook\tdebug.gethook([thread]) -lua",
+            "contents": "debug.gethook(${1:thread})$0"
+        },
+        {
+            "trigger": "debug.getinfo\tdebug.getinfo([thread,] f [, what]) -lua",
+            "contents": "debug.getinfo(${1:f})$0"
+        },
+        {
+            "trigger": "debug.getlocal\tdebug.getlocal([thread,] f, local) -lua",
+            "contents": "debug.getlocal(${1:f}, ${2:local})$0"
+        },
+        {
+            "trigger": "debug.getmetatable\tdebug.getmetatable(value) -lua",
+            "contents": "debug.getmetatable(${1:value})$0"
+        },
+        {
+            "trigger": "debug.getregistry\tdebug.getregistry() -lua",
+            "contents": "debug.getregistry()$0"
+        },
+        {
+            "trigger": "debug.getupvalue\tdebug.getupvalue(f, up) -lua",
+            "contents": "debug.getupvalue(${1:f}, ${2:up})$0"
+        },
+        {
+            "trigger": "debug.getuservalue\tdebug.getuservalue(u) -lua",
+            "contents": "debug.getuservalue(${1:u})$0"
+        },
+        {
+            "trigger": "debug.sethook\tdebug.sethook([thread,] hook, mask [,count]) -lua",
+            "contents": "debug.sethook(${1:hook}, ${2:mask})$0"
+        },
+        {
+            "trigger": "debug.setlocal\tdebug.setlocal([thread,] level, local, value) -lua",
+            "contents": "debug.setlocal(${1:level}, ${2:local}, ${3:value})$0"
+        },
+        {
+            "trigger": "debug.setmetatable\tdebug.setmetatable(value, table) -lua",
+            "contents": "debug.setmetatable(${1:value}, ${2:table}})$0"
+        },
+        {
+            "trigger": "debug.setupvalue\tdebug.setupvalue(f, up, value) -lua",
+            "contents": "debug.setupvalue(${1:f}, ${2:up}, ${3:value})$0"
+        },
+        {
+            "trigger": "debug.setuservalue\tdebug.setuservalue(udata, value) -lua",
+            "contents": "debug.setuservalue(${1:udata}, ${2:value})$0"
+        },
+        {
+            "trigger": "debug.traceback\tdebug.traceback([thread,] [message [, level]]) -lua",
+            "contents": "debug.traceback()$0"
+        },
+        {
+            "trigger": "debug.upvalueid\tdebug.upvalueid(f, n) -lua",
+            "contents": "debug.upvalueid(${1:f}, ${2:n})$0"
+        },
+        {
+            "trigger": "debug.upvaluejoin\tdebug.upvaluejoin(f1, n1, f2, n2) -lua",
+            "contents": "debug.upvaluejoin(${1:f1}, ${2:n1}, ${3:f1}, ${4:n2})$0"
+        },
+        {
+            "trigger": "bit32.arshift\tbit32.arshift(x, disp) -lua",
+            "contents": "bit32.arshift(${1:x}, ${2:disp})$0"
+        },
+        {
+            "trigger": "bit32.band\tbit32.band(···) -lua",
+            "contents": "bit32.band($1)$0"
+        },
+        {
+            "trigger": "bit32.bnot\tbit32.bnot(x) -lua",
+            "contents": "bit32.bnot(${1:x})$0"
+        },
+        {
+            "trigger": "bit32.bor\tbit32.bor(···) -lua",
+            "contents": "bit32.bor($1)$0"
+        },
+        {
+            "trigger": "bit32.btest\tbit32.btest(···) -lua",
+            "contents": "bit32.btest($1)$0"
+        },
+        {
+            "trigger": "bit32.bxor\tbit32.bxor(···) -lua",
+            "contents": "bit32.bxor($1)$0"
+        },
+        {
+            "trigger": "bit32.extract\tbit32.extract(n, field [, width]) -lua",
+            "contents": "bit32.extract(${1:n}, ${2:field})$0"
+        },
+        {
+            "trigger": "bit32.replace\tbit32.replace(n, v, field [, width]) -lua",
+            "contents": "bit32.replace(${1:n}, ${2:v}, ${3:field})$0"
+        },
+        {
+            "trigger": "bit32.lrotate\tbit32.lrotate(x, disp) -lua",
+            "contents": "bit32.lrotate(${1:x}, ${2:disp})$0"
+        },
+        {
+            "trigger": "bit32.lshift\tbit32.lshift(x, disp) -lua",
+            "contents": "bit32.lshift(${1:x}, ${2:disp})$0"
+        },
+        {
+            "trigger": "bit32.rrotate\tbit32.rrotate(x, disp) -lua",
+            "contents": "bit32.rrotate(${1:x}, ${2:disp})$0"
+        },
+        {
+            "trigger": "bit32.rshift\tbit32.rshift(x, disp) -lua",
+            "contents": "bit32.rshift(${1:x}, ${2:disp})$0"
+        },
+        {
+            "trigger": "coroutine.create\tcoroutine.create(f) -lua",
+            "contents": "coroutine.create(${1:f})$0"
+        },
+        {
+            "trigger": "coroutine.resume\tcoroutine.resume(co [, val1, ···]) -lua",
+            "contents": "coroutine.resume(${1:co})$0"
+        },
+        {
+            "trigger": "coroutine.running\tcoroutine.running() -lua",
+            "contents": "coroutine.running()$0"
+        },
+        {
+            "trigger": "coroutine.status\tcoroutine.status(co) -lua",
+            "contents": "coroutine.status(${1:co})$0"
+        },
+        {
+            "trigger": "coroutine.wrap\tcoroutine.wrap(f) -lua",
+            "contents": "coroutine.wrap(${1:f})$0"
+        },
+        {
+            "trigger": "coroutine.yield\tcoroutine.yield(···) -lua",
+            "contents": "coroutine.yield($1)$0"
+        },
+        {
+            "trigger": "math.abs\tmath.abs(x) -lua",
+            "contents": "math.abs(${1:x})$0"
+        },
+        {
+            "trigger": "math.acos\tmath.acos(x) -lua",
+            "contents": "math.acos(${1:x})$0"
+        },
+        {
+            "trigger": "math.asin\tmath.asin(x) -lua",
+            "contents": "math.asin(${1:x})$0"
+        },
+        {
+            "trigger": "math.atan\tmath.atan(x) -lua",
+            "contents": "math.atan(${1:x})$0"
+        },
+        {
+            "trigger": "math.atan2\tmath.atan2(x, y) -lua",
+            "contents": "math.atan2(${1:x}, ${2:y})$0"
+        },
+        {
+            "trigger": "math.ceil\tmath.ceil(x) -lua",
+            "contents": "math.ceil(${1:x})$0"
+        },
+        {
+            "trigger": "math.cos\tmath.cos(x) -lua",
+            "contents": "math.cos(${1:x})$0"
+        },
+        {
+            "trigger": "math.cosh\tmath.cosh(x) -lua",
+            "contents": "math.cosh(${1:x})$0"
+        },
+        {
+            "trigger": "math.deg\tmath.deg(x) -lua",
+            "contents": "math.deg(${1:x})$0"
+        },
+        {
+            "trigger": "math.exp\tmath.exp(x) -lua",
+            "contents": "math.exp(${1:x})$0"
+        },
+        {
+            "trigger": "math.floor\tmath.floor(x) -lua",
+            "contents": "math.floor(${1:x})$0"
+        },
+        {
+            "trigger": "math.fmod\tmath.fmod(x, y) -lua",
+            "contents": "math.fmod(${1:x}, ${2:y})$0"
+        },
+        {
+            "trigger": "math.frexp\tmath.frexp(x) -lua",
+            "contents": "math.frexp(${1:x})$0"
+        },
+        {
+            "trigger": "math.huge\tmath.huge -lua",
+            "contents": "math.huge$0"
+        },
+        {
+            "trigger": "math.ldexp\tmath.ldexp(m, e) -lua",
+            "contents": "math.ldexp(${1:m}, ${2:e})$0"
+        },
+        {
+            "trigger": "math.log\tmath.log(x [, base]) -lua",
+            "contents": "math.log(${1:x})$0"
+        },
+        {
+            "trigger": "math.max\tmath.max(x, ...) -lua",
+            "contents": "math.max(${1:x}, $2)$0"
+        },
+        {
+            "trigger": "math.min\tmath.min(x, ...) -lua",
+            "contents": "math.min(${1:x}, $2)$0"
+        },
+        {
+            "trigger": "math.modf\tmath.modf(x) -lua",
+            "contents": "math.modf(${1:x})$0"
+        },
+        {
+            "trigger": "math.pi\tmath.pi -lua",
+            "contents": "math.pi$0"
+        },
+        {
+            "trigger": "math.pow\tmath.pow(x, y) -lua",
+            "contents": "math.pow(${1:x}, ${2:y})$0"
+        },
+        {
+            "trigger": "math.rad\tmath.rad(x) -lua",
+            "contents": "math.rad(${1:x})$0"
+        },
+        {
+            "trigger": "math.random\tmath.random(m [, n]) -lua",
+            "contents": "math.random(${1:m})$0"
+        },
+        {
+            "trigger": "math.sin\tmath.sin(x) -lua",
+            "contents": "math.sin(${1:x})$0"
+        },
+        {
+            "trigger": "math.sinh\tmath.sinh(x) -lua",
+            "contents": "math.sinh(${1:x})$0"
+        },
+        {
+            "trigger": "math.sqrt\tmath.sqrt(x) -lua",
+            "contents": "math.sqrt(${1:x})$0"
+        },
+        {
+            "trigger": "math.tan\tmath.tan(x) -lua",
+            "contents": "math.tan(${1:x})$0"
+        },
+        {
+            "trigger": "math.tanh\tmath.tanh(x) -lua",
+            "contents": "math.tanh(${1:x})$0"
+        },
+        {
+            "trigger": "string.byte \tstring.byte(s [, i [, j]]) -lua",
+            "contents": "string.byte(${1:s})$0"
+        },
+        {
+            "trigger": "string.char \tstring.char(···) -lua",
+            "contents": "string.char($1)$0"
+        },
+        {
+            "trigger": "string.dump \tstring.dump(function) -lua",
+            "contents": "string.dump(${1:function})$0"
+        },
+        {
+            "trigger": "string.find \tstring.find(s, pattern [, init [, plain]]) -lua",
+            "contents": "string.find(${1:s}, ${2:pattern})$0"
+        },
+        {
+            "trigger": "string.format \tstring.format(formatstring, ···) -lua",
+            "contents": "string.format(${1:formatstring})$0"
+        },
+        {
+            "trigger": "string.gmatch \tstring.gmatch(s, pattern) -lua",
+            "contents": "string.gmatch(${1:s}, ${2:pattern})$0"
+        },
+        {
+            "trigger": "string.gsub \tstring.gsub(s, pattern, repl [, n]) -lua",
+            "contents": "string.gsub(${1:s}, ${2:pattern}, ${3:repl})$0"
+        },
+        {
+            "trigger": "string.len \tstring.len(s) -lua",
+            "contents": "string.len(${1:s})$0"
+        },
+        {
+            "trigger": "string.lower \tstring.lower(s) -lua",
+            "contents": "string.lower(${1:s})$0"
+        },
+        {
+            "trigger": "string.match \tstring.match(s, pattern [, init]) -lua",
+            "contents": "string.match(${1:s}, ${2:pattern})$0"
+        },
+        {
+            "trigger": "string.rep \tstring.rep(s, n [, sep]) -lua",
+            "contents": "string.rep(${1:s}, ${2:n})$0"
+        },
+        {
+            "trigger": "string.reverse \tstring.reverse(s) -lua",
+            "contents": "string.reverse(${1:s})$0"
+        },
+        {
+            "trigger": "string.sub \tstring.sub(s, i [, j]) -lua",
+            "contents": "string.sub(${1:s}, ${2:i})$0"
+        },
+        {
+            "trigger": "string.upper \tstring.upper(s) -lua",
+            "contents": "string.upper(${1:s})$0"
+        },
+        {
+            "trigger": "_G\t_VERSION -lua",
+            "contents": "_G$0"
+        },
+        {
+            "trigger": "_VERSION\t_VERSION -lua",
+            "contents": "_VERSION$0"
+        },
+        {
+            "trigger": "assert \tassert(v [, message]) -lua",
+            "contents": "assert(${1:v})$0"
+        },
+        {
+            "trigger": "collectgarbage \tcollectgarbage([opt [, arg]]) -lua",
+            "contents": "collectgarbage()$0"
+        },
+        {
+            "trigger": "dofile \tdofile([filename]) -lua",
+            "contents": "dofile()$0"
+        },
+        {
+            "trigger": "error \terror(message [, level]) -lua",
+            "contents": "error(${1:message})$0"
+        },
+        {
+            "trigger": "getmetatable \tgetmetatable(object) -lua",
+            "contents": "getmetatable(${1:object})$0"
+        },
+        {
+            "trigger": "ipairs \tipairs(t) -lua",
+            "contents": "ipairs(${1:t})$0"
+        },
+        {
+            "trigger": "load \tload(ld [, source [, mode [, env]]]) -lua",
+            "contents": "load(${1:ld})$0"
+        },
+        {
+            "trigger": "loadfile \tloadfile([filename [, mode [, env]]]) -lua",
+            "contents": "loadfile()$0"
+        },
+        {
+            "trigger": "next \tnext(table [, index]) -lua",
+            "contents": "next(${1:table})$0"
+        },
+        {
+            "trigger": "pairs \tpairs(t) -lua",
+            "contents": "pairs(${1:t})$0"
+        },
+        {
+            "trigger": "pcall \tpcall(f [, arg1, ···]) -lua",
+            "contents": "pcall(${1:f})$0"
+        },
+        {
+            "trigger": "print \tprint(···) -lua",
+            "contents": "print($1)$0"
+        },
+        {
+            "trigger": "rawequal \trawequal(v1, v2) -lua",
+            "contents": "rawequal(${1:v1}, ${2:v2})$0"
+        },
+        {
+            "trigger": "rawget \trawget(table, index) -lua",
+            "contents": "rawget(${1:table}, ${2:index})$0"
+        },
+        {
+            "trigger": "rawlen \trawlen(v) -lua",
+            "contents": "rawlen(${1:v})$0"
+        },
+        {
+            "trigger": "rawset \trawset(table, index, value) -lua",
+            "contents": "rawset(${1:table}, ${2:index}, ${3:value})$0"
+        },
+        {
+            "trigger": "select \tselect(index, ···) -lua",
+            "contents": "select(${1:index}, $2)$0"
+        },
+        {
+            "trigger": "setmetatable \tsetmetatable(table, metatable) -lua",
+            "contents": "setmetatable(${1:table}, ${2:metatable})$0"
+        },
+        {
+            "trigger": "tonumber \ttonumber(e [, base]) -lua",
+            "contents": "tonumber(${1:e})$0"
+        },
+        {
+            "trigger": "tostring \ttostring(v) -lua",
+            "contents": "tostring(${1:v})$0"
+        },
+        {
+            "trigger": "type \ttype(v) -lua",
+            "contents": "type(${1:v})$0"
+        },
+        {
+            "trigger": "xpcall \txpcall(f, msgh [, arg1, ···]) -lua",
+            "contents": "xpcall(${1:f}, ${2:msgh})$0"
+        },
+        {
+            "trigger": "require\trequire(modname) -lua",
+            "contents": "require(\"${1:modename}\")$0"
+        },
+        {
+            "trigger": "package.config\tpackage.config -lua",
+            "contents": "package.config$0"
+        },
+        {
+            "trigger": "package.cpath\tpackage.cpath -lua",
+            "contents": "package.cpath$0"
+        },
+        {
+            "trigger": "package.loaded\tpackage.loaded -lua",
+            "contents": "package.loaded$0"
+        },
+        {
+            "trigger": "package.loadlib\tpackage.loadlib(libname, funcname) -lua",
+            "contents": "package.loadlib(${1:libname}, ${2:funcname})$0"
+        },
+        {
+            "trigger": "package.path\tpackage.path -lua",
+            "contents": "package.path$0"
+        },
+        {
+            "trigger": "package.preload\tpackage.preload -lua",
+            "contents": "package.preload$0"
+        },
+        {
+            "trigger": "package.searchers\tpackage.searchers -lua",
+            "contents": "package.searchers$0"
+        },
+        {
+            "trigger": "package.searchpath\tpackage.searchpath(name, path [, sep [, rep]]) -lua",
+            "contents": "package.searchpath(${1:name}, ${2:path})$0"
+        },
+        {
+            "trigger": "io.close\tio.close([file]) -lua",
+            "contents": "io.close()$0"
+        },
+        {
+            "trigger": "io.flush\tio.flush() -lua",
+            "contents": "io.flush()$0"
+        },
+        {
+            "trigger": "io.lines\tio.lines([filename ...]) -lua",
+            "contents": "io.lines()$0"
+        },
+        {
+            "trigger": "io.open\tio.open(filename [, mode]) -lua",
+            "contents": "io.open(${1:filename})$0"
+        },
+        {
+            "trigger": "io.popen\tio.popen(prog, [, mode]) -lua",
+            "contents": "io.popen(${1:prog})$0"
+        },
+        {
+            "trigger": "io.read\tio.read(...) -lua",
+            "contents": "io.read(${1})$0"
+        },
+        {
+            "trigger": "io.tmpfile\tio.tmpfile() -lua",
+            "contents": "io.tmpfile()$0"
+        },
+        {
+            "trigger": "io.type\tio.type(obj) -lua",
+            "contents": "io.type(${1:obj})$0"
+        },
+        {
+            "trigger": "io.write\tio.write(...) -lua",
+            "contents": "io.write($1)$0"
+        },
+        {
+            "trigger": "file:close\tfile:close() -lua",
+            "contents": "file:close()$0"
+        },
+        {
+            "trigger": "file:flush\tfile:flush() -lua",
+            "contents": "file:flush()$0"
+        },
+        {
+            "trigger": "file:lines\tfile:lines(...) -lua",
+            "contents": "file:lines($1)$0"
+        },
+        {
+            "trigger": "file:read\tfile:read(...) -lua",
+            "contents": "file:read($1)$0"
+        },
+        {
+            "trigger": "file:seek\tfile:seek([whence [, offset]]) -lua",
+            "contents": "file:seek()$0"
+        },
+        {
+            "trigger": "file:setvbuf\tfile:setvbuf(mode [,size]) -lua",
+            "contents": "file:setvbuf(${1:mode})$0"
+        },
+        {
+            "trigger": "file:write\tfile:write(...) -lua",
+            "contents": "file:write($1)$0"
+        },
+        {
+            "trigger": "table.concat\ttable.concat(list [, sep [, i [, j]]]) -lua",
+            "contents": "table.concat(${1:list})$0"
+        },
+        {
+            "trigger": "table.insert\ttable.insert(list, [pos], value) -lua",
+            "contents": "table.insert(${1:list}, ${2:value})$0"
+        },
+        {
+            "trigger": "table.pack\ttable.pack(...) -lua",
+            "contents": "table.pack($1)$0"
+        },
+        {
+            "trigger": "table.remove\ttable.remove(list [, pos]) -lua",
+            "contents": "table.remove(${1:list})$0"
+        },
+        {
+            "trigger": "table.sort\ttable.sort(list [, comp]) -lua",
+            "contents": "table.sort(${1:list})$0"
+        },
+        {
+            "trigger": "table.unpack\ttable.unpack(list [, i [, j]]) -lua",
+            "contents": "table.unpack(${1:list})$0"
+        },
+        {
+            "trigger": "os.clock\tos.clock()",
+            "contents": "os.clock()$0"
+        },
+        {
+            "trigger": "os.exit\tos.exit([code [, close]]) -lua",
+            "contents": "os.exit()$0"
+        },
+        {
+            "trigger": "os.getenv\tos.getenv(varname) -lua",
+            "contents": "os.getenv(${1:varname})$0"
+        },
+        {
+            "trigger": "os.remove\tos.remove(filename) -lua",
+            "contents": "os.remove(${1:filename})$0"
+        },
+        {
+            "trigger": "os.rename\tos.rename(oldname, newname) -lua",
+            "contents": "os.rename(${1:oldname}, ${2:newname})$0"
+        },
+        {
+            "trigger": "os.setlocale\tos.setlocale(locale [, category]) -lua",
+            "contents": "os.setlocale(${1:locale})$0"
+        },
+        {
+            "trigger": "os.time\tos.time([table]) -lua",
+            "contents": "os.time()$0"
+        },
+        {
+            "trigger": "os.tmpname\tos.tmpname() -lua",
+            "contents": "os.tmpname()$0"
+        },
+        {
+            "trigger": "os.date\tos.date([format [, time]]) -lua",
+            "contents": "os.date()$0"
+        },
+        {
+            "trigger": "os.difftime\tos.difftime(t2, t1) -lua",
+            "contents": "os.difftime(${1:t2}, ${2:t1})$0"
+        },
+        {
+            "trigger": "os.execute\tos.execute([command]) -lua",
+            "contents": "os.execute()$0"
+        }
+    ]
+}
